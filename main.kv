@@ -1,0 +1,61 @@
+<DropDown>:
+    Button:
+        text: '1 УРОВЕНЬ'
+        size_hint_y: None
+        height: 44
+        on_release: root.select('1 УРОВЕНЬ')
+        background_color: [0, 8/255, 128/255, .4]
+    Button:
+        text: '2 УРОВЕНЬ'
+        size_hint_y: None
+        height: 44
+        on_release: root.select('2 УРОВЕНЬ')
+        background_color: [0, 8/255, 128/255, .6]
+    Button:
+        text: '3 УРОВЕНЬ'
+        size_hint_y: None
+        height: 44
+        on_release: root.select('3 УРОВЕНЬ')
+        background_color: [0, 8/255, 128/255, .8]
+    Button:
+        text: 'РЕЗУЛЬТАТЫ'
+        size_hint_y: None
+        height: 44
+        on_release: root.select('РЕЗУЛЬТАТЫ')
+        background_color: [0, 8/255, 128/255, .9]
+
+
+<Button>:
+    text: 'ПРОВЕРИТЬ'
+    text_size: self.size
+    halign: 'center'
+    valign: 'center'
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Line:
+            width: 2
+            rectangle: self.x, self.y, self.width, self.height
+    size_hint: (None, None)
+    height: 40
+    width: 180
+    background_color: [0, 1, 0, 1]
+    color: [1, 1, 1, 1]
+    font_size: '24sp'
+    outline_width: 2
+
+<TextInput>:
+    write_tab: False
+    multiline: False
+    size_hint: (None, 2)
+    width: 80
+    font_size: 22
+    input_filter: 'int'
+    max_characters: 3
+
+
+<BoxLayout>:
+    orientation: 'vertical'
+    padding: 15
+    spacing: 30
+
