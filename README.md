@@ -1,2 +1,3 @@
-# qivy_app
-app for training mathematic
+# Kivy
+application for training mathematic
+It has three levels of difficulty
